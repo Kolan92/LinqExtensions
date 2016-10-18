@@ -6,18 +6,6 @@ using LinqExtensions;
 using NUnit.Framework;
 
 namespace LinqExtensionsTests {
-    public class TestGrouping<TKey, TElement> : List<TElement>, IGrouping<TKey, TElement> {
-        public TKey Key {
-            get;
-            set;
-        }
-
-        public TestGrouping(TKey key, params TElement[] elemetns) {
-            Key = key;
-            this.AddRange(elemetns);
-        }
-
-    }
     [TestFixture]
     public class LinqExtensionsTests {
         [Test]
